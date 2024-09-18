@@ -2,12 +2,15 @@
 <html>
 <head>
 <title>Create an HTML Table</title>
-
+<style>
+    table,th,td {
+        border: 1px solid black;
+        padding: 10px;
+        border-collapse:collapse;
+    }
+</style>
 </head>
 <body>
-
-</body>
-</html>
     <table>
         <tr>
             <th>Name</th>
@@ -52,3 +55,32 @@
             <td>C</td>
         </tr>
     </table>
+    <table>
+        <caption>Weekly Grocery List</caption>
+        <thead>
+            <th>Grocery Item</th>
+            <th>Cost</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Coffee</td>
+                <td>$10</td>
+            </tr>
+            <tr>
+                <td>Cheese</td>
+                <td>$5</td>
+            </tr>
+            <tr>
+                <td>Ice Cream</td>
+                <td>$6</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Sum</td>
+                <td>$21</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
