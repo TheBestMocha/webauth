@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Table</title>
+<style>
+    table {
+        border: 3px solid red;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    th {
+        border: 3px solid red;
+        border-collapse: collapse;
+        height: 100px;
+        text-align: center;
+    }
+    td {
+        border: 3px solid red;
+        border-collapse: collapse;
+        height: 100px;
+        text-align: right;
+        padding: 10px;
+    }
+    th {
+        background-color: green;
+    }
+    caption {
+        background-color: cyan;
+    }
+    tbody {
+        background-color: orange;
+    }
+    tfoot {
+        background-color: purple;
+    }
+</style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Favorite Color</th>
+            </tr>
+            <caption>Data from Wisconsin County High School</caption>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Johnathan</td>
+                <td>10</td>
+                <td>Purple</td>
+            </tr>
+            <tr>
+                <td>Josiah</td>
+                <td>11</td>
+                <td>Orange</td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Average:</td>
+                <td>10.5</td>
+                <td>Burnt Sienna</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
