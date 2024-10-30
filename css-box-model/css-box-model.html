@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Box Model</title>
+<style>
+    #one {
+        width: 300px;
+        margin: 0px;
+        border: 1px solid black;
+        padding: 10px;
+        outline-style:dashed;
+        outline-width: 10px;
+    }
+    #two {
+        width: 300px;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        border-left: 3px solid red;
+        border-right: 3px solid red;
+        padding: 3px 10px;
+        margin: 2px 20px;
+        outline-width: 10px;
+        outline-style:groove;
+        outline-color: black;
+    }
+    #three {
+        width: 300px;
+        margin: 1px 2px 3px 4px;
+        border-left: 1px solid black;
+        border-right: 10px solid red;
+        border-top: 3px dotted blue;
+        border-bottom: 32px dashed green;
+        padding: 1px 2px 3px 4px;
+        outline-width: 50px;
+        outline-style: double;
+        outline-color: darkblue;
+    }
+</style>
+</head>
+<body>
+    <div id="one">
+        <p>
+            content width: 300<br>
+            top margin: 0<br>
+            right margin: 0<br>
+            bottom margin: 0<br>
+            left margin: 0<br>
+            top border: 1<br>
+            right border: 1<br>
+            bottom border: 1<br>
+            left border: 1<br>
+            top padding: 10<br>
+            right padding: 10<br>
+            bottom padding: 10<br>
+            left padding: 10<br>
+            outline thickness: 10<br>
+            TOTAL BOX WIDTH: 322
+        </p>            
+    </div>
+    <div id="two">
+        <p>
+            content width: 300<br>
+            top margin: 2<br>
+            right margin: 20<br>
+            bottom margin: 2<br>
+            left margin: 20<br>
+            top border: 1<br>
+            right border: 3<br>
+            bottom border: 1<br>
+            left border: 3<br>
+            top padding: 10<br>
+            right padding: 3<br>
+            bottom padding: 10<br>
+            left padding: 3<br>
+            outline thickness: 10<br>
+            TOTAL BOX WIDTH: 352
+        </p>
+    </div>
+    <div id="three">
+        <p>
+            content width: 300<br>
+            top margin: 1<br>
+            right margin: 2<br>
+            bottom margin: 3<br>
+            left margin: 4<br>
+            top border: 3<br>
+            right border: 10<br>
+            bottom border: 32<br>
+            left border: 1<br>
+            top padding: 1<br>
+            right padding: 2<br>
+            bottom padding: 3<br>
+            left padding: 4<br>
+            outline thickness: 50<br>
+            TOTAL BOX WIDTH: 323
+        </p>            
+    </div>
+</body>
+</html>
