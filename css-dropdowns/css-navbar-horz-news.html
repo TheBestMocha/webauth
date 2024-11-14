@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Navigation Bar Horizontal News</title>
+<style>
+    ul {
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px;
+    }
+    li {
+        display: inline;
+    }
+    #one{
+        background-color: lightgreen;
+    }
+    #one:active {
+        background-color: darkgreen;
+    }
+    #two {
+        background-color: lightblue;
+    }
+    #two:active {
+        background: darkblue;
+    }
+    #three {
+        background-color: red;
+    }
+    #three:active {
+        background-color: orange;
+    }
+    #four {
+        background-color: purple;
+    }
+    #four:active {
+        background-color: yellowgreen;
+    }
+    .active {
+        background-color: yellow;
+    }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    .dropdownButton {
+        width: 100px;
+        height: 25px;
+        background-color: grey;
+        border: none;
+    }
+    .dropdownButton:hover {
+        background-color: lightgrey;
+    }
+    .dropdownContent {
+        display: none;
+        width: 100px;
+        position: absolute;
+        z-index: 1;
+    }
+    .dropdownContent a{
+        display: block;
+        text-decoration: none;
+        height: 25px;
+        padding: 2px 25px;
+    }
+    .dropdownContent a:hover {
+        background-color: gainsboro;
+    }
+    .dropdown:hover .dropdownContent {
+        display: block;
+    }
+    
+</style>
+</head>
+<body>
+    <ul>
+        <li id="one"><a href="css-navbar-horz-home.html">Home</a></li>
+        <li id="two"><a class="active" href="css-navbar-horz-news.html">News</a></li>
+        <li id="three"><a href="css-navbar-horz-contact.html">Contact</a></li>
+        <li id="four"><a href="css-navbar-horz-about.html">About</a></li>
+    </ul>
+    <div>
+        <h1>News</h1>
+    </div>
+    <div class="dropdown">
+        <button class="dropdownButton">New Stories</button>
+        <div class="dropdownContent">
+            <a href="news1.html">Today</a>
+            <a href="news2.html">Yesterday</a>
+            <a href="news3.html">Tommorrow</a>
+        </div>
+    </div>
+</body>
+</html>

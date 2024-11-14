@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Navigation Bar Horizontal About</title>
+<style>
+    ul {
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px;
+    }
+    li {
+        display: inline;
+    }
+    #one{
+        background-color: lightgreen;
+    }
+    #one:active {
+        background-color: darkgreen;
+    }
+    #two {
+        background-color: lightblue;
+    }
+    #two:active {
+        background: darkblue;
+    }
+    #three {
+        background-color: red;
+    }
+    #three:active {
+        background-color: orange;
+    }
+    #four {
+        background-color: purple;
+    }
+    #four:active {
+        background-color: yellowgreen;
+    }
+    .active {
+        background-color: yellow;
+    }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    .dropdownButton {
+        width: 100px;
+        height: 25px;
+        border: none;
+    }
+    .dropdownContent {
+        display: none;
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+    }
+    .dropdownContent p{
+        display: block;
+        padding: 2px 25px;
+        width: 100%;
+    }
+    .dropdownContent p:hover {
+        background-color: gainsboro;
+    }
+    .dropdown:hover .dropdownContent {
+        display: block;
+    }
+</style>
+</head>
+<body>
+    <ul>
+        <li id="one"><a href="css-navbar-horz-home.html">Home</a></li>
+        <li id="two"><a href="css-navbar-horz-news.html">News</a></li>
+        <li id="three"><a href="css-navbar-horz-contact.html">Contact</a></li>
+        <li id="four"><a class="active" href="css-navbar-horz-about.html">About</a></li>
+    </ul>
+    <div>
+        <h1>About</h1>
+    </div>
+    <h2>Our Leadership</h2>
+    <h3>Jermy Gobby Wilson Carterson</h3>
+    <pre>Ambasitor              President</pre>
+    <div class="dropdown">
+        <button class="dropdownButton"><img src="download.jpg"></button>
+        <div class="dropdownContent">
+            <p>Jermy Gobby is our companies' Ambasitor who helps to deal with and supervise operations of improving our company through thoughts shared by customers.</p>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropdownButton"><img src="gettyimages-163640563-612x612.jpg"></button>
+        <div class="dropdownContent">
+            <p>Wilson Carterson is our companies president who supervies all operation of the company. He helps to deal with corruption and management issues in the company.</p>
+        </div>
+    </div>
+</body>
+</html>
