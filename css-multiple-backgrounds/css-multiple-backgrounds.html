@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Multiple Backgrounds</title>
+<style>
+    #one {
+        width: 500px;
+        height: 500px;
+        background-image: url('image copy.png'), url('image.png'),url('tile.jpg');
+        background-position: 285px 175px, bottom right, bottom right;
+        background-repeat: no-repeat, no-repeat, repeat;
+        background-size: 100px 100px, 300px 300px, auto;
+   }
+   #two {
+        width: 500px;
+        height: 500px;
+        background: url(image\ copy.png) no-repeat 285px 175px, url(image.png) no-repeat bottom right, url(tile.jpg) repeat bottom right;
+        background-size: 100px 100px, 300px 300px, auto;
+   }
+   body {
+        background: url(image\ copy\ 2.png) repeat;
+        background-size: cover;
+        height: 100%;
+   }
+   html {
+        height: 100%;
+   }
+   #three {
+        background-size: cover;
+        background: url(image\ copy\ 3.png) no-repeat;
+   }
+</style>
+</head>
+<body>
+    <div id="three"><h1>Austin</h1></div>
+    <div id="one"></div>
+    <div id="two"></div>
+</body>
+</html>
