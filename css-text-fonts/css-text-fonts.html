@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Farro">
 <title>CSS Text Effects and Web Fonts.</title>
 <style>
     #long {
         width: 300px;
         border: 1px solid black;
-        word-wrap: break-word;
-        
     }
     #whitespace {
         white-space: nowrap;
@@ -16,14 +15,32 @@
         border: 1px solid black;
     }
     #hidden {
+        white-space: nowrap;
         overflow: hidden;
         width: 300px;
         border: 1px solid black;
     }
     #ellipse {
+        white-space: nowrap;
+        overflow: hidden;
         border: 1px solid black;
         text-overflow: ellipsis;
         width: 300px;
+    }
+    #longWord {
+        width: 50px;
+        border: 1px solid black;
+    }
+    #longWord2 {
+        border: 1px solid black;
+        width: 50px;
+        word-wrap:break-word;
+    }
+    #par1{
+        font-family: 'Crimson Pro', serif;
+    }
+    #par2{
+        font-family: 'Farro', serif;
     }
 </style>
 </head>
@@ -32,5 +49,9 @@
     <p id="whitespace">This is a long long long long long long long long long long long long long long long long long long long long long long long long sentence.</p>
     <p id="hidden">This is a long long long long long long long long long long long long long long long long long long long long long long long long sentence.</p>
     <p id="ellipse">This is a long long long long long long long long long long long long long long long long long long long long long long long long sentence.</p>
+    <p id="longWord">theseare longerwords like supercalafragalisticepialodocous</p>
+    <p id="longWord2">theseare longerwords like supercalafragalisticepialodocous</p>
+    <p id="par1">These are very good sentences. This is another sentence. Another one to take up time. Another one to meet the word count. Oh, and another one... just because.</p>
+    <p id="par2">These are very good sentences. This is another sentence. Another one to take up time. Another one to meet the word count. Oh, and another one... just because.</p>
 </body>
 </html>
