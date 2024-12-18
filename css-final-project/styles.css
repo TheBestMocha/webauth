@@ -1,0 +1,249 @@
+body {
+    margin: 0px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.header {
+    width: 100vw;
+    aspect-ratio: 8;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar {
+    width: 100vw;
+    aspect-ratio: 32;
+    box-sizing: border-box;
+    flex-direction: column;
+    display: flex;
+    background-color: #725C42;
+    border: 1px solid black;
+}
+.content {
+    width: 100vw;
+    box-sizing: border-box;
+}
+.footer {
+    width: 100vw;
+    aspect-ratio: 32;
+    box-sizing: border-box;
+}
+.headerImage {
+    height: auto;
+    width: 100vw;
+}
+.headerText {
+   margin: 0px;
+   color: white;
+   position: absolute;
+   font: 45px "Times New Roman", sans-serif;
+}
+.navDropdown {
+    width: 16.6vw;
+    height: 25px;
+    flex-grow: 1;
+    display: inline-block-flex;
+    position: absolute;
+}
+.navDropdownButton{
+    width: 100%;
+    aspect-ratio: 5.3;
+    background-color: #725C42;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.navDropdownContent {
+    width: 100%;
+    display: none;
+}
+.navDropdown:hover .navDropdownContent {
+    display: block;
+}
+.navDropdownButton:hover {
+    background-color: #837660;
+}
+.navDropdownButton:active {
+    background-color: #97886E;
+}
+.navText {
+    margin: 0px;
+    color: white;
+    font: 15px "Times New Roman", sans-serif;
+}
+#text.footer {
+    font: 20px "Times New Roman", sans-serif;
+    display: inline-block;
+}
+#drop2 {
+    left: 16.6vw;
+}
+#drop3 {
+    left: 33.2vw;
+}
+#drop4 {
+    left: 49.8vw;
+}
+#drop5 {
+    left: 66.4vw;
+}
+#drop6 {
+    left: 83vw;
+}
+.paragraphContent {
+    font: 20px "Times New Roman", sans-serif;
+    display: inline-block;
+}
+
+#image.index{
+    display: inline-block;
+    width: 49%;
+    aspect-ratio: 1.6;
+    
+}
+
+.navLink {
+    background-color: green;
+    width: 100%;
+    aspect-ratio: 4.8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.navLink:hover {
+    background-color: #3C8F04;
+}
+.navLink:active {
+    background-color: #4AA80B;
+}
+
+#accomidationsLeft {
+    display: inline-block;
+    border: 1px solid black;
+    width: 20vw;
+}
+#accomidationsRight {
+    display: inline-block;
+    border: 1px solid black;
+    height:800px;
+    width: 79vw;
+    overflow: auto;
+}
+.listButton {
+    border-bottom: 1px solid black;
+    width: 100%;
+    aspect-ratio: 6;
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.listButton:hover {
+    background-color: #3C8F04;
+}
+.listButton:active {
+    background-color: #4AA80B;
+}
+#accomidationList {
+    display: inline-block;
+}
+.accomidationsDiv {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#accomidations.content{
+    display: flex;
+    align-items: flex-start;
+}
+.accomidationLink {
+    display: block;
+    margin: 0px;
+    font: 15px "Times New Roman", sans-serif;
+}
+
+
+#contentLeft.restaurant{
+    border: 1px solid black;
+    width: 30vw;
+    height: 800px;
+}
+#contentLeft.history{
+    border: 1px solid black;
+    width: 30vw;
+    height: 800px;
+}
+#contentRight.restaurant{
+    border: 1px solid black;
+    height: 800px;
+    width: 79vw;
+}
+#contentRight.history{
+    border: 1px solid black;
+    height: 800px;
+    width: 79vw;
+}
+#restaurant.content {
+    display: flex;
+    align-items: flex-start;
+}
+#history.content {
+    display: flex;
+    align-items: flex-start;
+}
+#image.restaurant{
+    width: 100%;
+    aspect-ratio: 1.6;
+}
+#links.restaurant {
+    display: block;
+}
+#text.restaurant{
+    font: 15px "Times New Roman", sans-serif;
+}
+#text.history{
+    font: 15px "Times New Roman", sans-serif;
+}
+#restaurants.heading {
+    font: 15px "Times New Roman", sans-serif;
+}
+#heading0.history {
+    font-family: "Times New Roman", sans-serif;
+    text-align: center;
+}
+#heading1.history {
+    font-family: "Times New Roman", sans-serif;
+    text-align: center;
+}
+#heading2.history {
+    font-family: "Times New Roman", sans-serif;
+    text-align: center;
+}
+#contentRight.restaurant{
+    border: 1px solid black;
+    height: 800px;
+    width: 79vw;
+}
+#image.history{
+    width: 100%;
+    aspect-ratio: 1.6;
+}
+#image.photos {
+    width: 100%;
+    aspect-ratio: 1.6;
+}
+#contentD.photos {
+    border: 1px solid black;
+    height: 800px;
+    width:49vw;
+}
+#text.photos{
+    font: 15px "Times New Roman", sans-serif;
+}
+#heading.directions {
+    font-family: "Times New Roman", sans-serif;
+}

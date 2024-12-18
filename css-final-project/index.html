@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Menomonee Falls</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="index" class="header">
+            <h1 class="headerText">Menomonee Falls</h1>
+            <img src="images/titleImage.jpeg" class="headerImage">
+        </div>
+        <div class="navbar">            
+            <div id="drop1" class="navDropdown">
+                <div id="navButton1" class="navDropdownButton">
+                    <p class="navText">Home</p>
+                </div>
+                <div class="navDropdownContent">
+                    <div id="navButton2" class="navLink">
+                        <p class="navText">About us</p>
+                    </div>
+                    <div id="navButton3" class="navLink">
+                        <p class="navText">Images</p>
+                    </div>
+                    <div id="navButton4" class="navLink">
+                        <p class="navText">Contact Us</p>
+                    </div>
+                </div>
+            </div>
+            <div id="drop2" class="navDropdown">
+                <div id="navButton5" class="navDropdownButton">
+                    <p class="navText">Accomidations</p>
+                </div>
+                <div class="navDropdownContent">
+                    <div id="navButton10" class="navLink">
+                        <p class="navText">Food</p>
+                    </div>
+                    <div id="navButton11" class="navLink">
+                        <p class="navText">Lodging</p>
+                    </div>
+                    <div id="navButton12" class="navLink">
+                        <p class="navText">Gas</p>
+                    </div>
+                </div>
+            </div>
+            <div id="drop3" class="navDropdown">
+                <div id="navButton6" class="navDropdownButton">
+                    <p class="navText">Restaurants</p>
+                </div>
+                <div class="navDropdownContent">
+                    <div id="navButton13" class="navLink">
+                        <p class="navText">About</p>
+                    </div>
+                    <div id="navButton14" class="navLink">
+                        <p class="navText">Restaurants</p>
+                    </div>
+                    <div id="navButton15" class="navLink">
+                        <p class="navText">Images</p>
+                    </div>
+                </div>
+            </div>
+            <div id="drop4" class="navDropdown">
+                <div id="navButton7" class="navDropdownButton">
+                    <p class="navText">History</p>
+                </div>
+                <div class="navDropdownContent">
+                    <div id="navButton16" class="navLink">
+                        <p class="navText">1840's</p>
+                    </div>
+                    <div id="navButton17" class="navLink">
+                        <p class="navText">1850's</p>
+                    </div>
+                    <div id="navButton18" class="navLink">
+                        <p class="navText">1860's</p>
+                    </div>
+                </div>
+            </div>
+            <div id="drop5" class="navDropdown">
+                <div id="navButton8" class="navDropdownButton">
+                    <p class="navText">Photos</p>
+                </div>
+            </div>
+            <div id="drop6" class="navDropdown">
+                <div id="navButton9" class="navDropdownButton">
+                    <p class="navText">Directions</p>
+                </div>
+                <div class="navDropdownContent">
+                    <div id="navButton19" class="navLink">
+                        <p class="navText">Where is Menomonee Falls</p>
+                    </div>
+                    <div id="navButton20" class="navLink">
+                        <p class="navText">Map</p>
+                    </div>
+                </div>
+            </div>>
+        </div>
+        <div class="content">
+            <p id="about" class="paragraphContent">Menomonee Falls is a small village located just outside of Milwaukee, Wisconsin. Menomonee Falls is located on the Menominee River, which provides science views. Old Falls village is a historical park in Menomonee Falls where you can enjoy the 19th century buildings and history. Many parks and nature trails are found around Menomonee Falls which provide great trails for hiking. Local farmers sell fresh produce and handmade goods. Menomonee Falls hosts numerous events, like concerts, festivals, and parades throughout the year. The village has a vibrant downtown area featuring many unique shops and restaurants. Menomonee Falls has beautiful waterfalls around the village that are good for photography and seeing nature. Many types of animal life live in the area like birds and many types of trees. If you like enjoying nature, sightseeing, and history, Menomonee Falls is a must-have destination.</p>
+            <img id="image" class="index" src="images/waterfalPicture.jpeg">
+            <img id="image" class="index" src="images/naturePicture.jpeg">
+            <p id="contact" class="paragraphContent">For more information, please email us at menomoneefalls@gmail.com</p>
+        </div>
+        <div class="footer">
+            <p class="footer" id="text">&copy1993 with One License No. 423843</p>
+        </div>
+        <script>
+            let elements = [];
+            let alinks = [0, 'index.html', 'index.html#about', 'index.html#image', 'index.html#contact', 'accomidations.html', 'restaurants.html', 'history.html', 'photos.html', 'directions.html', 'accomidations.html', 'accomidations.html?activeDiv=22', 'accomidations.html?activeDiv=23', 'restaurants.html#text', 'restaurants.html#restaurantsList','restaurants.html#image', 'history.html#heading0', 'history.html#heading1', 'history.html#heading2', 'directions.html#heading', 'directions.html#map'];
+
+            getElements(20);
+            initializeButtons();
+
+            function getElements(num) {
+                for(let i = 1;i < num+1;i++) {
+                    elements[i] = document.getElementById(getIdName(i));
+                }
+            }
+
+            function getIdName(num) {
+                return 'navButton'+num;
+            }
+
+            function initializeButtons() {
+                for(let i = 1;i < elements.length;i++) {
+                    elements[i].addEventListener('click', function() {
+                        window.location.href = alinks[i];
+                    });
+                }
+            }
+        </script>
+    </body>
+</html>

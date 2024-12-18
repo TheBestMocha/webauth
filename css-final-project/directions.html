@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Directions</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="header">
+            <h1 class="headerText">Directions</h1>
+            <img src="images/mapPicture.jpg" class="headerImage">
+        </div>
+        <div class="navbar">            
+            <div id="drop1" class="navDropdown">
+                <div id="navButton1" class="navDropdownButton">
+                    <p class="navText">Home</p>
+                </div>
+                <div class="navDropdownContent">
+                    <div id="navButton2" class="navLink">
+                        <p class="navText">About us</p>
+                    </div>
+                    <div id="navButton3" class="navLink">
+                        <p class="navText">Images</p>
+                    </div>
+                    <div id="navButton4" class="navLink">
+                        <p class="navText">Contact Us</p>
+                    </div>
+                </div>
+            </div>
+            <div id="drop2" class="navDropdown">
+                <div id="navButton5" class="navDropdownButton">
+                    <p class="navText">Accomidations</p>
+                </div>
+                <div class="navDropdownContent">
+                    <div id="navButton10" class="navLink">
+                        <p class="navText">Food</p>
+                    </div>
+                    <div id="navButton11" class="navLink">
+                        <p class="navText">Lodging</p>
+                    </div>
+                    <div id="navButton12" class="navLink">
+                        <p class="navText">Gas</p>
+                    </div>
+                </div>
+            </div>
+            <div id="drop3" class="navDropdown">
+                <div id="navButton6" class="navDropdownButton">
+                    <p class="navText">Restaurants</p>
+                </div>
+                <div class="navDropdownContent">
+                    <div id="navButton13" class="navLink">
+                        <p class="navText">About</p>
+                    </div>
+                    <div id="navButton14" class="navLink">
+                        <p class="navText">Restaurants</p>
+                    </div>
+                    <div id="navButton15" class="navLink">
+                        <p class="navText">Images</p>
+                    </div>
+                </div>
+            </div>
+            <div id="drop4" class="navDropdown">
+                <div id="navButton7" class="navDropdownButton">
+                    <p class="navText">History</p>
+                </div>
+                <div class="navDropdownContent">
+                    <div id="navButton16" class="navLink">
+                        <p class="navText">1840's</p>
+                    </div>
+                    <div id="navButton17" class="navLink">
+                        <p class="navText">1850's</p>
+                    </div>
+                    <div id="navButton18" class="navLink">
+                        <p class="navText">1860's</p>
+                    </div>
+                </div>
+            </div>
+            <div id="drop5" class="navDropdown">
+                <div id="navButton8" class="navDropdownButton">
+                    <p class="navText">Photos</p>
+                </div>
+            </div>
+            <div id="drop6" class="navDropdown">
+                <div id="navButton9" class="navDropdownButton">
+                    <p class="navText">Directions</p>
+                </div>
+                <div class="navDropdownContent">
+                    <div id="navButton19" class="navLink">
+                        <p class="navText">Where is Menomonee Falls</p>
+                    </div>
+                    <div id="navButton20" class="navLink">
+                        <p class="navText">Map</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content" id="history">
+            <div id="contentD" class="photos">
+                <h1 class="directions" id="heading">Where is Menomonee Falls?</h1>
+                <p class="photos" id="text">Menomonee Falls is located on the North American content. The villiage is located specifically in the United States of America. Inside the US, Menomonee Falls is located in the state of Wisconsin. It is located in the south-east corner of Wisconsin approximately 18 miles northwest of Milwaukee.</p>
+            </div>
+            <div class="photos" id="contentD">
+                <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d53857.651492407094!2d-88.12431388083768!3d43.18216027794616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1734542645126!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="footer">
+            <p class="footer" id="text">&copy1993 with One License No. 423843</p>
+        </div>
+        <script>
+            let elements = [];
+            let alinks = [0, 'index.html', 'index.html#about', 'index.html#image', 'index.html#contact', 'accomidations.html', 'restaurants.html', 'history.html', 'photos.html', 'directions.html', 'accomidations.html', 'accomidations.html?activeDiv=22', 'accomidations.html?activeDiv=23', 'restaurants.html#text', 'restaurants.html#restaurantsList','restaurants.html#image', 'history.html#heading0', 'history.html#heading1', 'history.html#heading2', 'directions.html#heading', 'directions.html#map'];
+
+            getElements(20);
+            initializeButtons();
+
+            function getElements(num) {
+                for(let i = 1;i < num+1;i++) {
+                    elements[i] = document.getElementById(getIdName(i));
+                }
+            }
+
+            function getIdName(num) {
+                return 'navButton'+num;
+            }
+
+            function initializeButtons() {
+                for(let i = 1;i < elements.length;i++) {
+                    elements[i].addEventListener('click', function() {
+                        window.location.href = alinks[i];
+                    });
+                }
+            }
+        </script>
+    </body>
+</html>
